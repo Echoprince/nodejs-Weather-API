@@ -1,6 +1,3 @@
-console.log("Client side js file")
-
-
 const weatherDoc  = document.querySelector('form')
 const searchValue = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
@@ -9,7 +6,7 @@ const messageTwo = document.querySelector('#message-2')
 
 weatherDoc.addEventListener('submit', (e) => {
     e.preventDefault()
-
+    
     const searchedValue = searchValue.value
 
     messageOne.textContent = 'Please wait Loading...'
