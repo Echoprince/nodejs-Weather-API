@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode')
 const forcast  = require('./utils/forcast')
 
 const app = express()
+const port  = process.env.PORT || 3000
 
 //Setting Up Directories paths
 const templates = path.join(__dirname, '../templates/views')
@@ -87,8 +88,8 @@ app.use('*',(req, res) => {
 })
 
 
-PORT = 3000
-
-app.listen(PORT, () => {
-    console.log(`App is running on port ${PORT}`)
+app.listen(port, () => {
+    console.log(`App is running on port ${port}`)
+    
 })
+
