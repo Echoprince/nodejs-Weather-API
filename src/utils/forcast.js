@@ -19,7 +19,8 @@ const forcastUrl = `http://api.weatherstack.com/current?access_key=b0c8ca6897063
         callback(undefined, {
             temperature: body.current.temperature,
             Weather_Description: body.current.weather_descriptions[0],
-            Apparent_Weather: body.current.feelslike
+            Apparent_Weather: body.current.feelslike,
+            humidity: body.current.humidity
 
         })
     }

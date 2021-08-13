@@ -20,10 +20,8 @@ weatherDoc.addEventListener('submit', (e) => {
         
     }else {
         messageOne.textContent =  data.location
-        messageTwo.textContent = `${data.data.Weather_Description}, with a temperature of ${data.data.temperature} degrees. But it feels like ${data.data.Apparent_Weather} degree outside.`
-        console.log(data)
-        // .Apparent_Weather  data.Weather_Description + data.temperature
-        // 91 , Partly cloudy , 84
+        messageTwo.textContent = `${data.data.Weather_Description}, with a temperature of ${data.data.temperature} degrees. But it feels like ${data.data.Apparent_Weather} degree outside and humidity of ${data.data.humidity}`
+               
         
     }
        
